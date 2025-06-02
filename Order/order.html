@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order - Coffee Shop</title>
+  <link rel="stylesheet" href="order.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="/img/DALINIYUTH_Logo.png" alt="Coffee Logo" />
+        <span>Coffee</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/About/about.html">About</a></li>
+          <li><a href="/Menu/menu.html">Menu</a></li>
+          <li><a href="/Testimonials/testimonials.html">Testimonials</a></li>
+          <li><a href="/Gallery/gallery.html">Gallery</a></li>
+          <li><a href="/Contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="order-section">
+    <h2>Place Your Order</h2>
+    <form class="order-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="drink">Select Drink:</label>
+      <select id="drink" required>
+        <option value="">-- Choose a drink --</option>
+        <option value="latte">Latte</option>
+        <option value="cappuccino">Cappuccino</option>
+        <option value="americano">Americano</option>
+        <option value="espresso">Espresso</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="1" value="1" required />
+
+      <label for="notes">Special Instructions:</label>
+      <textarea id="notes" rows="4" placeholder="e.g. Less sugar, oat milk..."></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+</body>
+</html>
